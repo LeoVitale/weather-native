@@ -1,12 +1,21 @@
 //import liraries
-import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React, {Component} from 'react';
+import {View, Text, StyleSheet} from 'react-native';
+
+import Header from './components/Header';
+
+import {getWeather} from './api/api';
+
+const weather = getWeather().then(response => {
+  console.log(response);
+})
 
 // create a component
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text>Appdd</Text>
+      <Header/>
+      <Text>App</Text>
     </View>
   );
 };
@@ -17,8 +26,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#ff0000',
-  },
+    backgroundColor: '#ff0000'
+  }
 });
 
 //make this component available to the app
