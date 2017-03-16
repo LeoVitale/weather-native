@@ -1,8 +1,18 @@
 //import liraries
-import React, { Component } from 'react';
-import { View, Image, Text, ScrollView, StyleSheet } from 'react-native';
+import React, {Component} from 'react';
+import {StyleSheet} from 'react-native';
+import {
+  Container,
+  Content,
+  Left,
+  Body,
+  ListItem,
+  Thumbnail,
+  Text,
+  Button
+} from 'native-base';
 
-import { getWeatherImg } from './api/api';
+import {getWeatherImg} from './api/api';
 
 import moment from 'moment';
 
@@ -10,7 +20,7 @@ import moment from 'moment';
 class WeatherScreen extends Component {
 
   static navigationOptions = {
-    title: ({ state }) => `${state.params.city}`,
+    title: ({state}) => `${state.params.city}`
   };
 
   constructor(props) {
@@ -21,34 +31,46 @@ class WeatherScreen extends Component {
   }
 
   componentWillMount() {
-    const { params } = this.props.navigation.state;
-    this.setState({ ...this.state, cityWeather: params.cityWeather });
+    const {params} = this.props.navigation.state;
+    this.setState({
+      ...this.state,
+      cityWeather: params.cityWeather
+    });
   }
 
   renderItem = () => {
-    const { list, city } = this.state.cityWeather;
+    const {list, city} = this.state.cityWeather;
     console.log(list);
     return list.map((item, index) => {
       console.log(getWeatherImg(item.weather[0].icon))
-      return (<View key={item.dt}>
-        <Text >
-          <Text>{moment.unix(item.dt).format('HH:mm')} </Text>
-          <Text> {parseInt(item.main.temp)} graus</Text>
-        </Text>
-        <Image style={styles.stretch} source={{uri:getWeatherImg(item.weather[0].icon)}} />
-      </View>)
+      return (
+        <ListItem thumbnail key={item.dt}>
+            <Left>
+              <Thumbnail square size={80} source={{uri: getWeatherImg(item.weather[0].icon)}}/>
+            </Left>
+            <Body>
+              <Text>{moment
+                .unix(item.dt)
+                .format('HH:mm')}</Text>
+              <Text note>
+                {parseInt(item.main.temp)} graus
+              </Text>
+            </Body>
+          </ListItem>
+      )
     })
   }
 
   render() {
     console.log('render');
     return (
-      <View style={styles.container}>
-        <Text>WeatherScreen</Text>
-        <ScrollView style={styles.scrollView}>
+
+      <Container>
+        <Content>
           {this.renderItem()}
-        </ScrollView>
-      </View>
+        </Content>
+      </Container>
+
     );
   }
 }
@@ -66,8 +88,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#ccc',
-  },
+    backgroundColor: '#ccc'
+  }
 });
 
 //make this component available to the app
