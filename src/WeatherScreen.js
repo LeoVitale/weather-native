@@ -11,10 +11,20 @@ class WeatherScreen extends Component {
 
   constructor(props) {
     super(props);
-    console.log(this);
+    this.state = {
+      cityWeather: {}
+    }
   }
+  
+  
+  componentWillMount() {
+    const { params } = this.props.navigation.state;
+    this.setState({...this.state, cityWeather: params.cityWeather});
+  }
+  
 
   render() {
+    console.log(this.state.cityWeather);
     return (
       <View style={styles.container}>
         <Text>WeatherScreen</Text>

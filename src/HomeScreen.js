@@ -15,7 +15,10 @@ class HomeScreen extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { text: 'São Paulo' };
+    this.state = { 
+      text: 'São Paulo', 
+      cityWeather: {} 
+    };
   }
 
   handleSearchText = (event) => {
@@ -23,9 +26,8 @@ class HomeScreen extends Component {
     if (event.nativeEvent.key === "Enter") {
       const { navigate } = this.props.navigation;
       getWeather(this.state.text).then(response => {
-        console.log(response.data);
-        console.log('navigate');
-        navigate('Weather', { city: this.state.text })
+        this.setState({...this.state, cityWeather: response.data})
+        navigate('Weather', { city: this.state.text, cityWeather:  this.state.cityWeather})
       });
     }
   }
