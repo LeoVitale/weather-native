@@ -65,7 +65,7 @@ class WeatherScreen extends Component {
     console.log('render');
     return (
 
-      <Container>
+      <Container style={{backgroundColor: '#fff'}}>
         <Content>
           {this.renderItem()}
         </Content>
