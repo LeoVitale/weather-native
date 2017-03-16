@@ -45,7 +45,7 @@ class WeatherScreen extends Component {
     return (
       <View style={styles.container}>
         <Text>WeatherScreen</Text>
-        <ScrollView>
+        <ScrollView style={styles.scrollView}>
           {this.renderItem()}
         </ScrollView>
       </View>
@@ -57,7 +57,10 @@ class WeatherScreen extends Component {
 const styles = StyleSheet.create({
   stretch: {
     width: 50,
-    height: 200
+    height: 50
+  },
+  scrollView: {
+    width: '100%'
   },
   container: {
     flex: 1,

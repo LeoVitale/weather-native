@@ -51,16 +51,12 @@ class HomeScreen extends Component {
 
 // define your styles
 const styles = StyleSheet.create({
-  maps: {
-    width: 100,
-    height: 200
-  },
   container: {
     flex: 1,
 
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#889900',
+    backgroundColor: '#ccc',
   },
 });
 
