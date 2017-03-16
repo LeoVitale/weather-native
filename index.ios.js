@@ -10,6 +10,14 @@ import {
   View
 } from 'react-native';
 
-import App from './src/app';
+import { StackNavigator } from 'react-navigation';
 
-AppRegistry.registerComponent('weatherNative', () => App);
+import HomeScreen from './src/HomeScreen';
+import WeatherScreen from './src/WeatherScreen';
+
+const RouterApp = StackNavigator({
+  Home: { screen: HomeScreen },
+  Weather: {screen : WeatherScreen }
+});
+
+AppRegistry.registerComponent('weatherNative', () => RouterApp);
