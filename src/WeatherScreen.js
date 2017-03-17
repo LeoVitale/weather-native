@@ -12,6 +12,8 @@ import {
   Button
 } from 'native-base';
 
+import weatherIcon from './utils/icons';
+
 import {getWeatherImg} from './api/api';
 
 import moment from 'moment';
@@ -45,8 +47,8 @@ class WeatherScreen extends Component {
       console.log(getWeatherImg(item.weather[0].icon))
       return (
         <ListItem thumbnail key={item.dt}>
-            <Left>
-              <Thumbnail square size={80} source={{uri: getWeatherImg(item.weather[0].icon)}}/>
+            <Left style={{width: 50}}>              
+              <Text style={{fontFamily:'WeatherIcons-Regular', fontSize:30, color:'#ff0000'}}>{weatherIcon(item.weather[0].icon)}</Text>
             </Left>
             <Body>
               <Text>{moment

@@ -69,6 +69,7 @@
 		EFE9AD8AFA024626BD5111F2 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 769ACB9D6A474832820D7164 /* Rubik-MediumItalic.ttf */; };
 		F7BC019394B247D1AE059844 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48C3041DCCC549DA95BD38CB /* Rubik-Black.ttf */; };
 		FDB030E025CE411685E0D8EC /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7FF3121D2234EB4A52C7664 /* MaterialIcons.ttf */; };
+		3057431A088C4E1A872A7C2A /* weathericons-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD8E07E0F2C48919371B2C5 /* weathericons-regular-webfont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -322,6 +323,7 @@
 		F9491E4B43B641DDBFE50205 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		FC92F90673824AA88546922A /* Andale Mono.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Andale Mono.ttf"; path = "../node_modules/native-base/Fonts/Andale Mono.ttf"; sourceTree = "<group>"; };
 		FFCA796B2B144BFE95666287 /* Courier New.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Courier New.ttf"; path = "../node_modules/native-base/Fonts/Courier New.ttf"; sourceTree = "<group>"; };
+		FFD8E07E0F2C48919371B2C5 /* weathericons-regular-webfont.ttf */ = {isa = PBXFileReference; name = "weathericons-regular-webfont.ttf"; path = "../src/fonts/weathericons-regular-webfont.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -588,6 +590,7 @@
 				E76B0B0FBFFB43E5AF6E220F /* Skia.ttf */,
 				2CBCC865A08644AF95FA2E70 /* Times New Roman.ttf */,
 				1BD49D6A45E5433E86F0ED0D /* Zocial.ttf */,
+				FFD8E07E0F2C48919371B2C5 /* weathericons-regular-webfont.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -988,6 +991,7 @@
 				549877A4F72245DEAE9E2BF8 /* Skia.ttf in Resources */,
 				57FBBF3BD8874ACBAFFBA3B9 /* Times New Roman.ttf in Resources */,
 				94E993801EA44A60AE2379A4 /* Zocial.ttf in Resources */,
+				3057431A088C4E1A872A7C2A /* weathericons-regular-webfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
