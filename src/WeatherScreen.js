@@ -1,6 +1,7 @@
 //import liraries
 import React, {Component} from 'react';
 import {StyleSheet} from 'react-native';
+
 import {
   Container,
   Content,
@@ -12,11 +13,11 @@ import {
   Button
 } from 'native-base';
 
-import weatherIcon from './utils/icons';
-
 import {getWeatherImg} from './api/api';
 
-import moment from 'moment';
+import ForecastItem from './components/ForecastItem';
+
+
 
 // create a component
 class WeatherScreen extends Component {
@@ -42,31 +43,15 @@ class WeatherScreen extends Component {
 
   renderItem = () => {
     const {list, city} = this.state.cityWeather;
-    console.log(list);
     return list.map((item, index) => {
-      console.log(getWeatherImg(item.weather[0].icon))
       return (
-        <ListItem thumbnail key={item.dt}>
-            <Left style={{width: 50}}>              
-              <Text style={{fontFamily:'WeatherIcons-Regular', fontSize:30, color:'#ff0000'}}>{weatherIcon(item.weather[0].icon)}</Text>
-            </Left>
-            <Body>
-              <Text>{moment
-                .unix(item.dt)
-                .format('HH:mm')}</Text>
-              <Text note>
-                {parseInt(item.main.temp)} graus
-              </Text>
-            </Body>
-          </ListItem>
+        <ForecastItem key={item.dt} item={item}/>
       )
     })
   }
 
   render() {
-    console.log('render');
     return (
-
       <Container style={{backgroundColor: '#fff'}}>
         <Content>
           {this.renderItem()}
