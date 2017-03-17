@@ -14,7 +14,6 @@ class WeatherNow extends Component {
     }
   }
 
-  
   componentWillMount() {
     getWeather(this.props.city)
       .then(response => {
@@ -22,7 +21,6 @@ class WeatherNow extends Component {
       });
   }
   
-
   render() {
     const {weather} = this.state;
     
@@ -33,14 +31,14 @@ class WeatherNow extends Component {
         <Text
           style={{
             fontFamily: 'WeatherIcons-Regular',
-            fontSize: 60,
+            fontSize: this.props.iconSize,
             color:'#fff'
           }}>
           {weatherIcon(weather.weather[0].icon)}
         </Text>
         
         <Text style={{fontSize:40, color:'#fff',fontWeight: '100'}}>
-          {weather.main.temp + '°C'}
+          {parseInt(weather.main.temp) + '°C'}
         </Text>
         
         

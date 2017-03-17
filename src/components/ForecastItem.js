@@ -4,6 +4,7 @@ import { StyleSheet } from 'react-native';
 import moment from 'moment';
 moment.locale('pt-br');
 import {
+  Content,
   Left,
   Body,
   ListItem,
@@ -20,21 +21,22 @@ const ForecastItem = (props) => {
   const { item } = props;
   if (date !== moment.unix(item.dt).date()) {
     date = moment.unix(item.dt).date()
-    return (<ListItem thumbnail style={{marginTop:30}}>
-      <Text style={{fontSize:30, fontWeight:'100'}}>{moment.unix(item.dt).format('LL')}</Text>
+    return (<ListItem thumbnail style={{ marginTop: 30 }}>
+      <Text style={{ fontSize: 30, fontWeight: '100' }}>{moment.unix(item.dt).format('LL')}</Text>
     </ListItem>)
   }
   return (
-    <ListItem thumbnail>
-      <Left style={{ width: 70 }}>
-        <Text style={{ fontFamily: 'WeatherIcons-Regular', fontSize: 40, color: '#8E44AD' }}>{weatherIcon(item.weather[0].icon)}</Text>
-      </Left>
-      <Body>
+    <ListItem>
+      <Left style={{ width: 0 }}>
         <Text>{moment
           .unix(item.dt)
           .format('HH:mm')}</Text>
-        <Text note style={{fontSize:30}}>
-          {parseInt(item.main.temp) + '°C'} 
+        <Text style={{ marginLeft: 20, fontFamily: 'WeatherIcons-Regular', fontSize: 40, color: '#8E44AD', textAlign: 'right' }}>{weatherIcon(item.weather[0].icon)}</Text>
+      </Left>
+      <Body>
+        <Text style={{ fontWeight: 'bold' }}>{item.weather[0].main}</Text>
+        <Text note style={{ fontSize: 30 }}>
+          {parseInt(item.main.temp) + '°C'}
         </Text>
       </Body>
     </ListItem>

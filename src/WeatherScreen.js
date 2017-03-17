@@ -55,7 +55,7 @@ class WeatherScreen extends Component {
       <Container style={{ backgroundColor: '#fff' }}>
         <Grid>
           <Row size={35}>
-            <WeatherNow city={params.city} />
+            <WeatherNow city={params.city} iconSize={50}/>
           </Row>
           <Row size={65}>
             <Content>

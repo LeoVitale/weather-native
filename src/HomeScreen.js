@@ -8,6 +8,7 @@ import {Col, Row, Grid} from "react-native-easy-grid";
 //import Header from './components/Header';
 
 import { getForecastList } from './api/api';
+import WeatherNow from './components/WeatherNow';
 
 // create a component
 class HomeScreen extends Component {
@@ -57,7 +58,9 @@ class HomeScreen extends Component {
                 backgroundColor: '#fff',
                 borderColor: '#fff',
                 width: '100%',
-                height: 50
+                height: 50,
+                paddingLeft:20,
+                paddingRight:20
               }}>
                 <Input
                   placeholder='Rounded Textbox'
@@ -68,7 +71,7 @@ class HomeScreen extends Component {
               </Item>
             </Row>
             <Row style={{ backgroundColor: '#8E44AD' }} size={3}>
-
+              <WeatherNow city={this.state.text} iconSize={90}/>
             </Row>
             
           </Grid>
