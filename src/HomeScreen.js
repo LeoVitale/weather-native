@@ -67,7 +67,7 @@ class HomeScreen extends Component {
                   onKeyPress={this.handleSearchText}/>
               </Item>
             </Row>
-            <Row style={{ backgroundColor: '#635DB7' }} size={3}>
+            <Row style={{ backgroundColor: '#8E44AD' }} size={3}>
 
             </Row>
             
