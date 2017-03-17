@@ -7,7 +7,7 @@ import {Col, Row, Grid} from "react-native-easy-grid";
 
 //import Header from './components/Header';
 
-import {getWeather} from './api/api';
+import { getForecastList } from './api/api';
 
 // create a component
 class HomeScreen extends Component {
@@ -20,23 +20,22 @@ class HomeScreen extends Component {
     super(props);
     this.state = {
       text: 'São Paulo',
-      cityWeather: {}
+      forecastList: {}
     };
   }
 
   handleSearchText = (event) => {
     if (event.nativeEvent.key === "Enter") {
       const {navigate} = this.props.navigation;
-      getWeather(this.state.text).then(response => {
-        console.log(response);
+      getForecastList(this.state.text).then(response => {
         if (response.data.message !== "Error") {
           this.setState({
             ...this.state,
-            cityWeather: response.data
+            forecastList: response.data
           });
           navigate('Weather', {
             city: this.state.text,
-            cityWeather: this.state.cityWeather
+            forecastList: this.state.forecastList
           })
         } else {
           alert('Serviço Indisponível');
@@ -52,8 +51,9 @@ class HomeScreen extends Component {
 
       <Container>
         <Grid>
-          <Row size={1}>
+          <Row size={1} style={{paddingLeft: 20,paddingRight: 20}}>
               <Item rounded style={{
+                marginTop: 50,
                 backgroundColor: '#fff',
                 borderColor: '#fff',
                 width: '100%',

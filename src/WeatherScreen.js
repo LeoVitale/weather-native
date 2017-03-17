@@ -12,12 +12,11 @@ import {
   Text,
   Button
 } from 'native-base';
+import {Col, Row, Grid} from "react-native-easy-grid";
 
-import {getWeatherImg} from './api/api';
-
+import { getWeatherImg, getWeather } from './api/api';
 import ForecastItem from './components/ForecastItem';
-
-
+import WeatherNow from './components/WeatherNow';
 
 // create a component
 class WeatherScreen extends Component {
@@ -29,7 +28,7 @@ class WeatherScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cityWeather: {}
+      forecastList: {}
     }
   }
 
@@ -37,12 +36,12 @@ class WeatherScreen extends Component {
     const {params} = this.props.navigation.state;
     this.setState({
       ...this.state,
-      cityWeather: params.cityWeather
+      forecastList: params.forecastList
     });
   }
 
   renderItem = () => {
-    const {list, city} = this.state.cityWeather;
+    const {list, city} = this.state.forecastList;
     return list.map((item, index) => {
       return (
         <ForecastItem key={item.dt} item={item}/>
@@ -51,13 +50,20 @@ class WeatherScreen extends Component {
   }
 
   render() {
+    const {params} = this.props.navigation.state;
     return (
-      <Container style={{backgroundColor: '#fff'}}>
-        <Content>
-          {this.renderItem()}
-        </Content>
+      <Container style={{ backgroundColor: '#fff' }}>
+        <Grid>
+          <Row size={35}>
+            <WeatherNow city={params.city} />
+          </Row>
+          <Row size={65}>
+            <Content>
+              {this.renderItem()}
+            </Content>
+          </Row>
+        </Grid>
       </Container>
-
     );
   }
 }

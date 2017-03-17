@@ -18,15 +18,15 @@ const ForecastItem = (props) => {
   const { item } = props;
   return (
     <ListItem thumbnail>
-      <Left style={{ width: 50 }}>
-        <Text style={{ fontFamily: 'WeatherIcons-Regular', fontSize: 30, color: '#ff0000' }}>{weatherIcon(item.weather[0].icon)}</Text>
+      <Left style={{ width: 70 }}>
+        <Text style={{ fontFamily: 'WeatherIcons-Regular', fontSize: 40, color: '#8E44AD' }}>{weatherIcon(item.weather[0].icon)}</Text>
       </Left>
       <Body>
         <Text>{moment
           .unix(item.dt)
           .format('HH:mm')}</Text>
-        <Text note>
-          {parseInt(item.main.temp)} graus
+        <Text note style={{fontSize:30}}>
+          {parseInt(item.main.temp) + '°C'} 
         </Text>
       </Body>
     </ListItem>
