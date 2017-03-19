@@ -39,7 +39,6 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* weatherNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* weatherNativeTests.m */; };
-		3057431A088C4E1A872A7C2A /* weathericons-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD8E07E0F2C48919371B2C5 /* weathericons-regular-webfont.ttf */; };
 		335A6FE54D68466496FF7E80 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D2AB8766EE44F78B1598DB3 /* Ionicons.ttf */; };
 		366617458BDB4159A11859E6 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D22FA3EC0A942E49C3A4F96 /* Rubik-Regular.ttf */; };
 		3A0556CC07024F70974A23F2 /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 376167A4E13E4092B2B0E4A6 /* Rubik-LightItalic.ttf */; };
@@ -59,11 +58,12 @@
 		9942CB546601447BBBD26EDF /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BE9A717FC1B4EA3822F05DD /* rubicon-icon-font.ttf */; };
 		99B58AAACE754E1CB25C5CC4 /* SanFranciscoThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1DDA9B342DC428680A51683 /* SanFranciscoThin.ttf */; };
 		9F8CB34E868E4BA6B8A44BCA /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15DB4002891B49C399066722 /* Roboto_medium.ttf */; };
+		A9A33932B8EB4B1C90A5111F /* weathericons-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26D97DFE310348FDB41F18EB /* weathericons-regular-webfont.ttf */; };
 		AC6BCEA3F340460EB5C376DA /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B7FCA2EB8854C209098AB36 /* Entypo.ttf */; };
 		C1760753EAC7456D9C49FCEE /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC313DC34A0C49468A570A24 /* Foundation.ttf */; };
 		C36495A40B0F429ABE20427A /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED847914BC64090972FEE85 /* Rubik-Bold.ttf */; };
 		CA6C2A2E9C394FC9BFDB306A /* SanFranciscoBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49D47D6326164EFEABA827E4 /* SanFranciscoBold.ttf */; };
-		E0ABCF251E7B9C33007ACDBC /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = E0ABCF241E7B9C33007ACDBC /* cloud.png */; };
+		E0F346FC1E7F0FFD00FD2030 /* cloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = E0F346FB1E7F0FFD00FD2030 /* cloudy.png */; };
 		E2279A35E97E46828F5408F3 /* Arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D0647F79FAE4FF6B7F3F4E0 /* Arial.ttf */; };
 		E4D68054CECD4A0B958E1D61 /* Microsoft Sans Serif.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E844AABF8F8E477690A3CFE5 /* Microsoft Sans Serif.ttf */; };
 		E9E8168F89B64D268DD64D5A /* Comic Sans MS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C0FF230B16049DB81AD049D /* Comic Sans MS.ttf */; };
@@ -293,6 +293,7 @@
 		1BD49D6A45E5433E86F0ED0D /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		1CE740700DF24C00964215B5 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		1D0647F79FAE4FF6B7F3F4E0 /* Arial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Arial.ttf; path = "../node_modules/native-base/Fonts/Arial.ttf"; sourceTree = "<group>"; };
+		26D97DFE310348FDB41F18EB /* weathericons-regular-webfont.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "weathericons-regular-webfont.ttf"; path = "../src/assets/fonts/weathericons-regular-webfont.ttf"; sourceTree = "<group>"; };
 		2CBCC865A08644AF95FA2E70 /* Times New Roman.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Times New Roman.ttf"; path = "../node_modules/native-base/Fonts/Times New Roman.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* weatherNative-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weatherNative-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* weatherNative-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weatherNative-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -318,7 +319,7 @@
 		C7FF3121D2234EB4A52C7664 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		CED847914BC64090972FEE85 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Bold.ttf"; path = "../node_modules/native-base/Fonts/Rubik-Bold.ttf"; sourceTree = "<group>"; };
 		D8832683FCFD47259BAC6207 /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-BoldItalic.ttf"; path = "../node_modules/native-base/Fonts/Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
-		E0ABCF241E7B9C33007ACDBC /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud.png; path = ../../../Downloads/cloud.png; sourceTree = "<group>"; };
+		E0F346FB1E7F0FFD00FD2030 /* cloudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloudy.png; path = ../src/assets/img/cloudy.png; sourceTree = "<group>"; };
 		E70E0973998F477C857FD5A5 /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-BlackItalic.ttf"; path = "../node_modules/native-base/Fonts/Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
 		E76B0B0FBFFB43E5AF6E220F /* Skia.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Skia.ttf; path = "../node_modules/native-base/Fonts/Skia.ttf"; sourceTree = "<group>"; };
 		E844AABF8F8E477690A3CFE5 /* Microsoft Sans Serif.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Microsoft Sans Serif.ttf"; path = "../node_modules/native-base/Fonts/Microsoft Sans Serif.ttf"; sourceTree = "<group>"; };
@@ -326,7 +327,6 @@
 		F9491E4B43B641DDBFE50205 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		FC92F90673824AA88546922A /* Andale Mono.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Andale Mono.ttf"; path = "../node_modules/native-base/Fonts/Andale Mono.ttf"; sourceTree = "<group>"; };
 		FFCA796B2B144BFE95666287 /* Courier New.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Courier New.ttf"; path = "../node_modules/native-base/Fonts/Courier New.ttf"; sourceTree = "<group>"; };
-		FFD8E07E0F2C48919371B2C5 /* weathericons-regular-webfont.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "weathericons-regular-webfont.ttf"; path = "../src/fonts/weathericons-regular-webfont.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -559,7 +559,7 @@
 		A5D394A8C11545B896AE20C6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E0ABCF241E7B9C33007ACDBC /* cloud.png */,
+				E0F346FB1E7F0FFD00FD2030 /* cloudy.png */,
 				FC92F90673824AA88546922A /* Andale Mono.ttf */,
 				1466BF92986D4C2CAF775171 /* Arial Black.ttf */,
 				1D0647F79FAE4FF6B7F3F4E0 /* Arial.ttf */,
@@ -594,7 +594,7 @@
 				E76B0B0FBFFB43E5AF6E220F /* Skia.ttf */,
 				2CBCC865A08644AF95FA2E70 /* Times New Roman.ttf */,
 				1BD49D6A45E5433E86F0ED0D /* Zocial.ttf */,
-				FFD8E07E0F2C48919371B2C5 /* weathericons-regular-webfont.ttf */,
+				26D97DFE310348FDB41F18EB /* weathericons-regular-webfont.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -988,7 +988,7 @@
 				49B380EC1FAB4CFD8996F18D /* Rubik-Medium.ttf in Resources */,
 				EFE9AD8AFA024626BD5111F2 /* Rubik-MediumItalic.ttf in Resources */,
 				366617458BDB4159A11859E6 /* Rubik-Regular.ttf in Resources */,
-				E0ABCF251E7B9C33007ACDBC /* cloud.png in Resources */,
+				E0F346FC1E7F0FFD00FD2030 /* cloudy.png in Resources */,
 				03941152F08E42DFA816DA57 /* SanFrancisco.ttf in Resources */,
 				CA6C2A2E9C394FC9BFDB306A /* SanFranciscoBold.ttf in Resources */,
 				99B58AAACE754E1CB25C5CC4 /* SanFranciscoThin.ttf in Resources */,
@@ -996,7 +996,7 @@
 				549877A4F72245DEAE9E2BF8 /* Skia.ttf in Resources */,
 				57FBBF3BD8874ACBAFFBA3B9 /* Times New Roman.ttf in Resources */,
 				94E993801EA44A60AE2379A4 /* Zocial.ttf in Resources */,
-				3057431A088C4E1A872A7C2A /* weathericons-regular-webfont.ttf in Resources */,
+				A9A33932B8EB4B1C90A5111F /* weathericons-regular-webfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

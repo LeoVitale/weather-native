@@ -23,8 +23,8 @@ class WeatherNow extends Component {
   
   render() {
     const {weather} = this.state;
-    
     if(!Object.getOwnPropertyNames(weather).length > 0) return (<View></View>);
+
     return (
       <View style={styles.container}>
 

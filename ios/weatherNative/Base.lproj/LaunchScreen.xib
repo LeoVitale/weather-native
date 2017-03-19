@@ -12,11 +12,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="601"/>
+            <rect key="frame" x="0.0" y="0.0" width="358" height="569"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" semanticContentAttribute="spatial" fixedFrame="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="lAE-dL-HfQ">
-                    <rect key="frame" x="97" y="215" width="221" height="170"/>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" semanticContentAttribute="spatial" fixedFrame="YES" image="cloudy.png" translatesAutoresizingMaskIntoConstraints="NO" id="lAE-dL-HfQ">
+                    <rect key="frame" x="97" y="215" width="165" height="138"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                 </imageView>
@@ -25,10 +25,10 @@
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-            <point key="canvasLocation" x="515" y="370.5"/>
+            <point key="canvasLocation" x="487" y="354.5"/>
         </view>
     </objects>
     <resources>
-        <image name="cloud.png" width="512" height="512"/>
+        <image name="cloudy.png" width="512" height="512"/>
     </resources>
 </document>
