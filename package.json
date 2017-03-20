@@ -12,7 +12,7 @@
 		"moment-timezone": "^0.5.11",
 		"native-base": "^2.0.12",
 		"react": "~15.4.1",
-		"react-native": "0.42.0",
+		"react-native": "0.42.3",
 		"react-native-easy-grid": "^0.1.8",
 		"react-navigation": "^1.0.0-beta.7"
 	},
@@ -26,6 +26,8 @@
 		"preset": "react-native"
 	},
 	"rnpm": {
-		"assets": ["./src/assets"]
+		"assets": [
+			"./src/assets"
+		]
 	}
 }

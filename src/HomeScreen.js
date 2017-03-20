@@ -73,7 +73,7 @@ class HomeScreen extends Component {
             <Row style={{ backgroundColor: '#8E44AD' }} size={3}>
               <WeatherNow city={this.state.text} iconSize={90}/>
             </Row>
-            
+
           </Grid>
       </Container>
     );
