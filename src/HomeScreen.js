@@ -26,7 +26,8 @@ class HomeScreen extends Component {
   }
 
   handleSearchText = (event) => {
-    if (event.nativeEvent.key === "Enter") {
+    console.log(event.nativeEvent.text.length);
+    if (event.nativeEvent.text !== "" && event.nativeEvent.text.length > 3) {
       const {navigate} = this.props.navigation;
       getForecastList(this.state.text).then(response => {
         if (response.data.message !== "Error") {
@@ -47,9 +48,7 @@ class HomeScreen extends Component {
   }
 
   render() {
-
     return (
-
       <Container>
         <Grid>
           <Row size={1} style={{paddingLeft: 20,paddingRight: 20}}>
@@ -63,11 +62,13 @@ class HomeScreen extends Component {
                 paddingRight:20
               }}>
                 <Input
-                  placeholder='Rounded Textbox'
+                  placeholder=''
                   onChangeText={(text) => this.setState({text})}
                   value={this.state.text}
-                  returnKeyType={"done"}
-                  onKeyPress={this.handleSearchText}/>
+                  returnKeyType={"go"}
+                  
+                  onSubmitEditing={this.handleSearchText}
+                  />
               </Item>
             </Row>
             <Row style={{ backgroundColor: '#8E44AD' }} size={3}>
